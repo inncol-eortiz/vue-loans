@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Estilos personalizados específicos */
+button {
+  transition: border-color 0.25s;
+}
