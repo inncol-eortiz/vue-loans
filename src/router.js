@@ -34,9 +34,21 @@ const routes = [
         meta: { requiresAuth: true },
       },
       {
+        path: "loans/create",
+        name: "CreateLoan",
+        component: () => import("./views/LoanFormView.vue"),
+        meta: { requiresAuth: true },
+      },
+      {
         path: "users/create",
         name: "CreateUser",
         component: () => import("./views/UserFormView.vue"),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: "loans/edit/:id",
+        name: "EditLoan",
+        component: () => import("./views/LoanFormView.vue"),
         meta: { requiresAuth: true },
       },
       {
@@ -45,6 +57,24 @@ const routes = [
         component: () => import("./views/UserFormView.vue"),
         meta: { requiresAuth: true },
       },
+      {
+        path: "materials",
+        name: "Materials",
+        component: () => import("./views/MaterialsView.vue"),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: "materials/create",
+        name: "CreateMaterial",
+        component: () => import("./views/MaterialFormView.vue"),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: "materials/edit/:id",
+        name: "EditMaterial",
+        component: () => import("./views/MaterialFormView.vue"),
+        meta: { requiresAuth: true },
+      }
     ],
   },
 ];

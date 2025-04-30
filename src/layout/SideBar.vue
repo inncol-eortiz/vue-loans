@@ -15,6 +15,10 @@
           text="Usuarios"
         />
         <SidebarItem
+          to="/dashboard/materials"
+          text="Materiales"
+        />
+        <SidebarItem
           to="/dashboard/loans"
           text="Préstamos"
         />
